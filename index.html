@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <!-- Required meta tags --> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Your own stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <h1><strong>Weather App</strong></h1>
+    
+    &nbsp;
+
+    <div id="container">
+      <label id="zippity" for="zipcodeentry"><span id="font-text">Enter your zip code:</span></label> 
+      <input type="text" id="zipcodefield" name="zipcode" placeholder="Ex. 53717" onfocus=" this.value='' ">
+      <button class="btn-design" type="button" id="getWeather">Get Weather</button>
+    </div>
+
+    &nbsp;
+    
+    
+    <h3 id="second-heading">Your City: <span class="weather-attribute" id="yourcity"></span></h3>
+
+    &nbsp;
+
+    <h3 id="third-heading">Temperature: <span class="weather-attribute" id="temperature"></span>
+        <span id="cold-icon"><img src="images/cold-icon2.PNG"></span><span id="hot-icon"><img src="images/hot-icon.PNG"></span></h3>
+
+    &nbsp;
+
+    <h3 id="forth-heading">Wind Information (if available): <span class="weather-attribute" id="windinformation"></span>
+        <span id="wind-icon"><img src="images/wind-icon2.PNG"></span></h3>
+  </body>
+</html>
